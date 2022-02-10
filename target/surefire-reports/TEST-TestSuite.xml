@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="121.619" tests="10" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="105.119" tests="10" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="14.0.1+7"/>
@@ -21,7 +21,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/Users/admin/TechArch/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf11855912583397870722.tmp"/>
+    <property name="classworlds.conf" value="/Users/admin/TechArch/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf8773348375270828429.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/admin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="jdk.debug" value="release"/>
@@ -54,27 +54,27 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="forgotPassword_TC04A" classname="com.salesforce.tests.SFLoginTest" time="1.122"/>
-  <testcase name="forgotPassword_TC04B" classname="com.salesforce.tests.SFLoginTest" time="1.493"/>
-  <testcase name="loginRememberMe_TC03" classname="com.salesforce.tests.SFLoginTest" time="7.024"/>
-  <testcase name="testLoginWithCredentials_TC02" classname="com.salesforce.tests.SFLoginTest" time="7.075"/>
-  <testcase name="testloginError_TC01" classname="com.salesforce.tests.SFLoginTest" time="1.192"/>
-  <testcase name="selctDropDown_TC05" classname="com.salesforce.tests.UserMenuDropDownTest" time="5.689"/>
-  <testcase name="selectProfile_TC06" classname="com.salesforce.tests.UserMenuDropDownTest" time="30.874">
+  <testcase name="forgotPassword_TC04A" classname="com.salesforce.tests.SFLoginTest" time="1.118"/>
+  <testcase name="forgotPassword_TC04B" classname="com.salesforce.tests.SFLoginTest" time="0.9"/>
+  <testcase name="loginRememberMe_TC03" classname="com.salesforce.tests.SFLoginTest" time="6.526"/>
+  <testcase name="testLoginWithCredentials_TC02" classname="com.salesforce.tests.SFLoginTest" time="4.057"/>
+  <testcase name="testloginError_TC01" classname="com.salesforce.tests.SFLoginTest" time="0.841"/>
+  <testcase name="selctDropDown_TC05" classname="com.salesforce.tests.UserMenuDropDownTest" time="4.658"/>
+  <testcase name="selectProfile_TC06" classname="com.salesforce.tests.UserMenuDropDownTest" time="31.866">
     <failure message="file not published expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: file not published expected [true] but found [false]
 	at com.salesforce.tests.UserMenuDropDownTest.selectProfile_TC06(UserMenuDropDownTest.java:87)
 </failure>
-    <system-out><![CDATA[timeout- waiting for element: [[ChromeDriver: chrome on MAC (b12fcfa0054bcbec78aec4518845191d)] -> id: chatterFile]
+    <system-out><![CDATA[timeout- waiting for element: [[ChromeDriver: chrome on MAC (36bb2318e1e87b09d79f44bc9ed1a74a)] -> id: chatterFile]
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 98.0.4758.80 (7f0488e8ba0d8e019187c6325a16c29d9b7f4989-refs/branch-heads/4758@{#972}) on port 37428
+    <system-err><![CDATA[Starting ChromeDriver 98.0.4758.80 (7f0488e8ba0d8e019187c6325a16c29d9b7f4989-refs/branch-heads/4758@{#972}) on port 18171
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Feb 07, 2022 4:11:20 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Feb 09, 2022 6:13:37 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="testDeveloperConsole_TC08" classname="com.salesforce.tests.UserMenuDropDownTest" time="10.733"/>
-  <testcase name="testLogout_TC09" classname="com.salesforce.tests.UserMenuDropDownTest" time="5.522"/>
-  <testcase name="testMySettings_TC07" classname="com.salesforce.tests.UserMenuDropDownTest" time="21.037"/>
+  <testcase name="testDeveloperConsole_TC08" classname="com.salesforce.tests.UserMenuDropDownTest" time="10.451"/>
+  <testcase name="testLogout_TC09" classname="com.salesforce.tests.UserMenuDropDownTest" time="5.608"/>
+  <testcase name="testMySettings_TC07" classname="com.salesforce.tests.UserMenuDropDownTest" time="15.983"/>
 </testsuite>

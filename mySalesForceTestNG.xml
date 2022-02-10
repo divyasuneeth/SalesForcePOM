@@ -6,11 +6,11 @@
 		<classes>
 			<class name="com.salesforce.tests.SFLoginTest"></class> 
 			<class name="com.salesforce.tests.UserMenuDropDownTest"/> 
-			 <class name="com.salesforce.tests.CreateAccountTest"></class> 
+			<!--  <class name="com.salesforce.tests.CreateAccountTest"></class> 
 			<class name="com.salesforce.tests.ContactsTest"></class>
 			<class name="com.salesforce.tests.OpportunityTest"></class>  
 			<class name="com.salesforce.tests.LeadsTest"></class>  
-			<class name="com.salesforce.tests.RandomScenariosTest"></class> 
+			<class name="com.salesforce.tests.RandomScenariosTest"></class>  -->
 		</classes>
 	</test>
 </suite>
