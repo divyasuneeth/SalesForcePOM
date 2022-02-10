@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-SalesForceTestSuite" class="navigator-link">
+              <span class="suite-name border-failed">SalesForceTestSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-SalesForceTestSuite" class="navigator-link ">
+                    <span>mySalesForceTestNG.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-SalesForceTestSuite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-SalesForceTestSuite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-SalesForceTestSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-SalesForceTestSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-SalesForceTestSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-SalesForceTestSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-SalesForceTestSuite" class="hide-methods failed suite-SalesForceTestSuite"> (hide)</a> <!-- hide-methods failed suite-SalesForceTestSuite -->
+                      <a href="#" panel-name="suite-SalesForceTestSuite" class="show-methods failed suite-SalesForceTestSuite"> (show)</a> <!-- show-methods failed suite-SalesForceTestSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-SalesForceTestSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SalesForceTestSuite" title="com.salesforce.tests.UserMenuDropDownTest" class="method navigator-link" hash-for-method="selectProfile_TC06">selectProfile_TC06</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-SalesForceTestSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-SalesForceTestSuite" class="hide-methods passed suite-SalesForceTestSuite"> (hide)</a> <!-- hide-methods passed suite-SalesForceTestSuite -->
+                      <a href="#" panel-name="suite-SalesForceTestSuite" class="show-methods passed suite-SalesForceTestSuite"> (show)</a> <!-- show-methods passed suite-SalesForceTestSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-SalesForceTestSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SalesForceTestSuite" title="com.salesforce.tests.SFLoginTest" class="method navigator-link" hash-for-method="forgotPassword_TC04A">forgotPassword_TC04A</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SalesForceTestSuite" title="com.salesforce.tests.SFLoginTest" class="method navigator-link" hash-for-method="forgotPassword_TC04B">forgotPassword_TC04B</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SalesForceTestSuite" title="com.salesforce.tests.SFLoginTest" class="method navigator-link" hash-for-method="loginRememberMe_TC03">loginRememberMe_TC03</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SalesForceTestSuite" title="com.salesforce.tests.UserMenuDropDownTest" class="method navigator-link" hash-for-method="selctDropDown_TC05">selctDropDown_TC05</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SalesForceTestSuite" title="com.salesforce.tests.UserMenuDropDownTest" class="method navigator-link" hash-for-method="testDeveloperConsole_TC08">testDeveloperConsole_TC08</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SalesForceTestSuite" title="com.salesforce.tests.SFLoginTest" class="method navigator-link" hash-for-method="testLoginWithCredentials_TC02">testLoginWithCredentials_TC02</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SalesForceTestSuite" title="com.salesforce.tests.UserMenuDropDownTest" class="method navigator-link" hash-for-method="testLogout_TC09">testLogout_TC09</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SalesForceTestSuite" title="com.salesforce.tests.UserMenuDropDownTest" class="method navigator-link" hash-for-method="testMySettings_TC07">testMySettings_TC07</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SalesForceTestSuite" title="com.salesforce.tests.SFLoginTest" class="method navigator-link" hash-for-method="testloginError_TC01">testloginError_TC01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-SalesForceTestSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-SalesForceTestSuite" class="panel SalesForceTestSuite">
+          <div class="suite-SalesForceTestSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.salesforce.tests.UserMenuDropDownTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectProfile_TC06">
+                  </a> <!-- selectProfile_TC06 -->
+                  <span class="method-name">selectProfile_TC06</span>
+                  <div class="stack-trace">java.lang.AssertionError: file not published expected [true] but found [false]
+	at com.salesforce.tests.UserMenuDropDownTest.selectProfile_TC06(UserMenuDropDownTest.java:87)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SalesForceTestSuite-class-failed -->
+          <div class="suite-SalesForceTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.salesforce.tests.UserMenuDropDownTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="selctDropDown_TC05">
+                  </a> <!-- selctDropDown_TC05 -->
+                  <span class="method-name">selctDropDown_TC05</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeveloperConsole_TC08">
+                  </a> <!-- testDeveloperConsole_TC08 -->
+                  <span class="method-name">testDeveloperConsole_TC08</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogout_TC09">
+                  </a> <!-- testLogout_TC09 -->
+                  <span class="method-name">testLogout_TC09</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMySettings_TC07">
+                  </a> <!-- testMySettings_TC07 -->
+                  <span class="method-name">testMySettings_TC07</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SalesForceTestSuite-class-passed -->
+          <div class="suite-SalesForceTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.salesforce.tests.SFLoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="forgotPassword_TC04A">
+                  </a> <!-- forgotPassword_TC04A -->
+                  <span class="method-name">forgotPassword_TC04A</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="forgotPassword_TC04B">
+                  </a> <!-- forgotPassword_TC04B -->
+                  <span class="method-name">forgotPassword_TC04B</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginRememberMe_TC03">
+                  </a> <!-- loginRememberMe_TC03 -->
+                  <span class="method-name">loginRememberMe_TC03</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWithCredentials_TC02">
+                  </a> <!-- testLoginWithCredentials_TC02 -->
+                  <span class="method-name">testLoginWithCredentials_TC02</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testloginError_TC01">
+                  </a> <!-- testloginError_TC01 -->
+                  <span class="method-name">testloginError_TC01</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SalesForceTestSuite-class-passed -->
+        </div> <!-- panel SalesForceTestSuite -->
+        <div panel-name="test-xml-SalesForceTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/admin/TechArch/mysalesforcePOM/mySalesForceTestNG.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;SalesForceTestSuite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;SalesForceRegression&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.salesforce.tests.SFLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.salesforce.tests.UserMenuDropDownTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SalesForceRegression --&gt;
+&lt;/suite&gt; &lt;!-- SalesForceTestSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-SalesForceTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for SalesForceTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">SalesForceRegression (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-SalesForceTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for SalesForceTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-SalesForceTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for SalesForceTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_SalesForceTestSuite');
+function tableData_SalesForceTestSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(10);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'selectProfile_TC06')
+data.setCell(0, 2, 'com.salesforce.tests.UserMenuDropDownTest')
+data.setCell(0, 3, 30868);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testMySettings_TC07')
+data.setCell(1, 2, 'com.salesforce.tests.UserMenuDropDownTest')
+data.setCell(1, 3, 21036);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testDeveloperConsole_TC08')
+data.setCell(2, 2, 'com.salesforce.tests.UserMenuDropDownTest')
+data.setCell(2, 3, 10736);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testLoginWithCredentials_TC02')
+data.setCell(3, 2, 'com.salesforce.tests.SFLoginTest')
+data.setCell(3, 3, 7074);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'loginRememberMe_TC03')
+data.setCell(4, 2, 'com.salesforce.tests.SFLoginTest')
+data.setCell(4, 3, 7025);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'selctDropDown_TC05')
+data.setCell(5, 2, 'com.salesforce.tests.UserMenuDropDownTest')
+data.setCell(5, 3, 5689);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testLogout_TC09')
+data.setCell(6, 2, 'com.salesforce.tests.UserMenuDropDownTest')
+data.setCell(6, 3, 5521);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'forgotPassword_TC04B')
+data.setCell(7, 2, 'com.salesforce.tests.SFLoginTest')
+data.setCell(7, 3, 1493);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testloginError_TC01')
+data.setCell(8, 2, 'com.salesforce.tests.SFLoginTest')
+data.setCell(8, 3, 1192);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'forgotPassword_TC04A')
+data.setCell(9, 2, 'com.salesforce.tests.SFLoginTest')
+data.setCell(9, 3, 1121);
+window.suiteTableData['SalesForceTestSuite']= { tableData: data, tableDiv: 'times-div-SalesForceTestSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-SalesForceTestSuite">
+              </div> <!-- times-div-SalesForceTestSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-SalesForceTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for SalesForceTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-SalesForceTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">2 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.salesforce.tests.UserMenuDropDownTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">initialSetUp</span>
+                <br/>
+                <span class="ignored-method-name">endTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-SalesForceTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.salesforce.tests.SFLoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialSetUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApp(chrome, public void com.salesforce.tests.SFLoginTest.forgotPassword_TC04A())</span>
+                <span class="method-start">211 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">forgotPassword_TC04A</span>
+                <span class="method-start">5080 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=forgotPassword_TC04A status=SUCCESS method=SFLoginTest.forgotPassword_TC04A()[pri:0...)</span>
+                <span class="method-start">6203 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApp(chrome, public void com.salesforce.tests.SFLoginTest.forgotPassword_TC04B())</span>
+                <span class="method-start">6319 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">forgotPassword_TC04B</span>
+                <span class="method-start">8482 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=forgotPassword_TC04B status=SUCCESS method=SFLoginTest.forgotPassword_TC04B()[pri:0...)</span>
+                <span class="method-start">9975 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApp(chrome, public void com.salesforce.tests.SFLoginTest.loginRememberMe_TC03())</span>
+                <span class="method-start">10102 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginRememberMe_TC03</span>
+                <span class="method-start">12637 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=loginRememberMe_TC03 status=SUCCESS method=SFLoginTest.loginRememberMe_TC03()[pri:0...)</span>
+                <span class="method-start">19662 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApp(chrome, public void com.salesforce.tests.SFLoginTest.testLoginWithCredentials_TC02())</span>
+                <span class="method-start">19806 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginWithCredentials_TC02</span>
+                <span class="method-start">22324 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testLoginWithCredentials_TC02 status=SUCCESS method=SFLoginTest.testLoginWithCreden...)</span>
+                <span class="method-start">29399 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApp(chrome, public void com.salesforce.tests.SFLoginTest.testloginError_TC01())</span>
+                <span class="method-start">29540 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testloginError_TC01</span>
+                <span class="method-start">31885 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testloginError_TC01 status=SUCCESS method=SFLoginTest.testloginError_TC01()[pri:0, ...)</span>
+                <span class="method-start">33077 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.salesforce.tests.UserMenuDropDownTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApp(chrome, public void com.salesforce.tests.UserMenuDropDownTest.selctDropDown_TC05())</span>
+                <span class="method-start">33204 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">selctDropDown_TC05</span>
+                <span class="method-start">35423 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=selctDropDown_TC05 status=SUCCESS method=UserMenuDropDownTest.selctDropDown_TC05()[...)</span>
+                <span class="method-start">41112 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApp(chrome, public void com.salesforce.tests.UserMenuDropDownTest.selectProfile_TC06())</span>
+                <span class="method-start">41260 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">selectProfile_TC06</span>
+                <span class="method-start">44473 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=selectProfile_TC06 status=FAILURE method=UserMenuDropDownTest.selectProfile_TC06()[...)</span>
+                <span class="method-start">75347 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApp(chrome, public void com.salesforce.tests.UserMenuDropDownTest.testDeveloperConsole_TC08())</span>
+                <span class="method-start">76020 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testDeveloperConsole_TC08</span>
+                <span class="method-start">78504 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testDeveloperConsole_TC08 status=SUCCESS method=UserMenuDropDownTest.testDeveloperC...)</span>
+                <span class="method-start">89240 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApp(chrome, public void com.salesforce.tests.UserMenuDropDownTest.testLogout_TC09())</span>
+                <span class="method-start">89377 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLogout_TC09</span>
+                <span class="method-start">91728 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testLogout_TC09 status=SUCCESS method=UserMenuDropDownTest.testLogout_TC09()[pri:0,...)</span>
+                <span class="method-start">97250 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApp(chrome, public void com.salesforce.tests.UserMenuDropDownTest.testMySettings_TC07())</span>
+                <span class="method-start">97367 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testMySettings_TC07</span>
+                <span class="method-start">99590 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testMySettings_TC07 status=SUCCESS method=UserMenuDropDownTest.testMySettings_TC07(...)</span>
+                <span class="method-start">120627 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.salesforce.tests.SFLoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">endTest</span>
+                <span class="method-start">120757 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

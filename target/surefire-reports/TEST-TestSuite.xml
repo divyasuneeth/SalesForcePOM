@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="121.619" tests="10" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="14.0.1+7"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-14.0.1.jdk/Contents/Home/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/admin/TechArch/mysalesforcePOM"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/admin/TechArch/mysalesforcePOM"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="14.0.1+7"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/_8/hjpgfp5n7j1c05ngvh0ntht80000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/admin/TechArch/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf11855912583397870722.tmp"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/admin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="58.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.16"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/admin"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="14"/>
+    <property name="user.name" value="admin"/>
+    <property name="java.class.path" value="/Users/admin/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_1.18.1.20211011-2139/jars/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="14"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-14.0.1.jdk/Contents/Home"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="14.0.1"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Users/admin/TechArch/mysalesforcePOM/EMBEDDED"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2020-04-14"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase name="forgotPassword_TC04A" classname="com.salesforce.tests.SFLoginTest" time="1.122"/>
+  <testcase name="forgotPassword_TC04B" classname="com.salesforce.tests.SFLoginTest" time="1.493"/>
+  <testcase name="loginRememberMe_TC03" classname="com.salesforce.tests.SFLoginTest" time="7.024"/>
+  <testcase name="testLoginWithCredentials_TC02" classname="com.salesforce.tests.SFLoginTest" time="7.075"/>
+  <testcase name="testloginError_TC01" classname="com.salesforce.tests.SFLoginTest" time="1.192"/>
+  <testcase name="selctDropDown_TC05" classname="com.salesforce.tests.UserMenuDropDownTest" time="5.689"/>
+  <testcase name="selectProfile_TC06" classname="com.salesforce.tests.UserMenuDropDownTest" time="30.874">
+    <failure message="file not published expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: file not published expected [true] but found [false]
+	at com.salesforce.tests.UserMenuDropDownTest.selectProfile_TC06(UserMenuDropDownTest.java:87)
+</failure>
+    <system-out><![CDATA[timeout- waiting for element: [[ChromeDriver: chrome on MAC (b12fcfa0054bcbec78aec4518845191d)] -> id: chatterFile]
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 98.0.4758.80 (7f0488e8ba0d8e019187c6325a16c29d9b7f4989-refs/branch-heads/4758@{#972}) on port 37428
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Feb 07, 2022 4:11:20 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="testDeveloperConsole_TC08" classname="com.salesforce.tests.UserMenuDropDownTest" time="10.733"/>
+  <testcase name="testLogout_TC09" classname="com.salesforce.tests.UserMenuDropDownTest" time="5.522"/>
+  <testcase name="testMySettings_TC07" classname="com.salesforce.tests.UserMenuDropDownTest" time="21.037"/>
+</testsuite>
