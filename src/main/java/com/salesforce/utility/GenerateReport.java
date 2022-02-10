@@ -36,7 +36,7 @@ public class GenerateReport {
 		extent.setSystemInfo("User Name", "Divya");
 
 		htmlreport.config().setDocumentTitle("Test Execution Report");
-		htmlreport.config().setReportName("firebase regression tests");
+		htmlreport.config().setReportName("SalesForce regression tests");
 		htmlreport.config().setTestViewChartLocation(ChartLocation.TOP);
 		htmlreport.config().setTheme(Theme.STANDARD);
 	}
@@ -52,11 +52,11 @@ public class GenerateReport {
 	}
 
 	public void logTestpassed() {
-		logger.log(Status.PASS, MarkupHelper.createLabel(testcaseName + "is passTest", ExtentColor.GREEN));
+		logger.log(Status.PASS, MarkupHelper.createLabel(testcaseName + "passed the Test", ExtentColor.GREEN));
 	}
 
 	public void logTestFailed() {
-		logger.log(Status.FAIL, MarkupHelper.createLabel(testcaseName + "is not passTest", ExtentColor.RED));
+		logger.log(Status.FAIL, MarkupHelper.createLabel(testcaseName + " failed the Test", ExtentColor.RED));
 	}
 
 	public void endTestReport() {
